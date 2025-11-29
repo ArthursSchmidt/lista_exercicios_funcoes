@@ -7,11 +7,20 @@
     */
 
     //ENTRADA
+    let palavra = prompt(`escreva uma palavra (as letras acentuadas não são contadas)`).toLowerCase();
 
+    let vogais = 0;
 
     //PROCESSAMENTO
-
-
+    function separacao(letras) {
+        if (letras == "a" || letras == "e" || letras == "i" || letras == "o" || letras == "u" ){
+            vogais = vogais + 1;
+        }
+    }
+    for (letra of palavra) {
+        separacao(letra);
+    }
+    alert(vogais);
     //SAÍDA
 
 </script>

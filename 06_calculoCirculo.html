@@ -8,11 +8,19 @@
     */
 
     //ENTRADA
+    let r = Number(prompt(`qual é o Raio do circulo`).trim());
 
-
-    //PROCESSAMENTO
-
+    //PROCESSAMENTO 
+    function area(vlArea) {
+        return 3.14 * Math.pow(vlArea, 2);
+    }
+    function perimetro(per) {
+        return 2 * 3.14 * per;
+    }
 
     //SAÍDA
+    const resArea = area(r);
+    const resPerim = perimetro(r);
 
+    alert(`Area: ${resArea}\nPerimetro: ${resPerim} `);
 </script>

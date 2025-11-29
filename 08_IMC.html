@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
+    let altura = Number(prompt(`qual a sua altura?`).trim().replace("," , "."));
+    let peso = Number(prompt(`qual o seu peso?`).trim());
 
     //PROCESSAMENTO
-
-
+    function calculo(a, p){
+        return p / a ** 2;
+    }
+    alert(calculo(altura, peso).toFixed(2));
     //SAÍDA
 
 </script>
